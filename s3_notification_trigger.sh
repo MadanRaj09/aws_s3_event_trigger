@@ -1,3 +1,4 @@
+#!/bin/bash
 set -x
 ###########################################################################
 
@@ -14,11 +15,11 @@ echo "aws account id is $aws_account_id"
 #environment variable which can be changed
 
 
-aws_region="ap-south-1"
-bucket_name="madan-bucket"
+aws_region=<your region>
+bucket_name=<bucket name>
 lambda_func_name="s3-lambda-function"
 role_name="s3-lambda-sns"
-email_address="mk0007352@gmail.com"
+email_address=<your email address>
 
 #########################################################################
 
