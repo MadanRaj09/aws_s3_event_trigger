@@ -12,7 +12,7 @@ echo "aws account id is $aws_account_id"
 
 ##########################################################################
 
-#environment variable which can be changed
+#environment variable which can be changed (just change it with your details)
 
 
 aws_region=<your region>
@@ -110,7 +110,7 @@ aws lambda add-permission \
   --principal s3.amazonaws.com \
   --source-arn "arn:aws:s3:::$bucket_name"
 
-#setting up eveny notification in s3 bucket
+#setting up event notification in s3 bucket
 
 LambdaFunctionArn="arn:aws:lambda:$aws_region:$aws_account_id:function:$lambda_func_name"
 aws s3api put-bucket-notification-configuration \
